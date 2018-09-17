@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2230C98C214FDA4000375EC8 /* PosterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2230C98B214FDA4000375EC8 /* PosterCell.swift */; };
+		2230C98E214FDE3D00375EC8 /* SuperheroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2230C98D214FDE3D00375EC8 /* SuperheroViewController.swift */; };
 		22CC0B7E214EAEFC00706BDE /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC0B7D214EAEFC00706BDE /* NowPlayingViewController.swift */; };
 		22F50E0B214E8F7E00B10945 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F50E0A214E8F7E00B10945 /* AppDelegate.swift */; };
 		22F50E10214E8F7F00B10945 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F50E0E214E8F7F00B10945 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2230C98B214FDA4000375EC8 /* PosterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCell.swift; sourceTree = "<group>"; };
+		2230C98D214FDE3D00375EC8 /* SuperheroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroViewController.swift; sourceTree = "<group>"; };
 		22CC0B7D214EAEFC00706BDE /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
 		22F50E07214E8F7E00B10945 /* flix_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flix_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F50E0A214E8F7E00B10945 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +46,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2230C989214FD97400375EC8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				22F52A55214ED2630067E562 /* MovieCell.swift */,
+				2230C98B214FDA4000375EC8 /* PosterCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2230C98A214FD9A500375EC8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				22CC0B7D214EAEFC00706BDE /* NowPlayingViewController.swift */,
+				2230C98D214FDE3D00375EC8 /* SuperheroViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		22F50DFE214E8F7E00B10945 = {
 			isa = PBXGroup;
 			children = (
@@ -63,13 +85,13 @@
 		22F50E09214E8F7E00B10945 /* flix_app */ = {
 			isa = PBXGroup;
 			children = (
-				22CC0B7D214EAEFC00706BDE /* NowPlayingViewController.swift */,
+				2230C989214FD97400375EC8 /* Views */,
+				2230C98A214FD9A500375EC8 /* ViewControllers */,
 				22F50E0A214E8F7E00B10945 /* AppDelegate.swift */,
 				22F50E0E214E8F7F00B10945 /* Main.storyboard */,
 				22F50E11214E8F8000B10945 /* Assets.xcassets */,
 				22F50E13214E8F8000B10945 /* LaunchScreen.storyboard */,
 				22F50E16214E8F8000B10945 /* Info.plist */,
-				22F52A55214ED2630067E562 /* MovieCell.swift */,
 			);
 			path = flix_app;
 			sourceTree = "<group>";
@@ -165,15 +187,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-flix_app-checkManifestLockResult.txt",
 			);
@@ -187,16 +205,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-flix_app/Pods-flix_app-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
@@ -213,6 +227,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2230C98E214FDE3D00375EC8 /* SuperheroViewController.swift in Sources */,
+				2230C98C214FDA4000375EC8 /* PosterCell.swift in Sources */,
 				22CC0B7E214EAEFC00706BDE /* NowPlayingViewController.swift in Sources */,
 				22F50E0B214E8F7E00B10945 /* AppDelegate.swift in Sources */,
 				22F52A56214ED2630067E562 /* MovieCell.swift in Sources */,
